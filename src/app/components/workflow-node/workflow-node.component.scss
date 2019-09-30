@@ -1,0 +1,39 @@
+
+.node {
+  border-top: 1px solid lightgray;
+  border-left: 1px solid lightgray;
+  border-right: 1px solid lightgray;
+  background-color: white;
+}
+.node.selected .title {
+  background-color: yellow;
+}
+.title {
+  padding: 0.5em;
+  text-transform: uppercase;
+  background-color: lightgray;
+}
+.output {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+}
+.output-title {
+  flex: 1;
+  padding: 0.5em;
+}
+
+.input {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+}
+.input-title {
+  flex: 1;
+  padding: 0.5em;
+}
+
+.control {
+  padding: 0.5em;
+  border-bottom: 1px solid lightgray;
+}

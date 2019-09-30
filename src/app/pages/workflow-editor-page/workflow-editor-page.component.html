@@ -1,0 +1,26 @@
+<mat-menu #addBlockMenu="matMenu">
+  <button mat-menu-item (click)="editor.createNode('init')">Init</button>
+  <button mat-menu-item (click)="editor.createNode('debug')">Debug</button>
+  <button mat-menu-item (click)="editor.createNode('button')">Button</button>
+  <button mat-menu-item (click)="editor.createNode('actions')">Actions</button>
+  <button mat-menu-item (click)="editor.createNode('http')">HTTP</button>
+  <button mat-menu-item (click)="editor.createNode('grid')">Grid</button>
+</mat-menu>
+
+<div class="button-bar">
+  <button mat-raised-button [matMenuTriggerFor]="addBlockMenu">
+    <mat-icon>add</mat-icon>
+    <span>Add block</span>
+  </button>
+  <button mat-raised-button (click)="editor.debug()">
+    <mat-icon>bug_report</mat-icon>
+    <span>Debug</span>
+  </button>
+  <button mat-raised-button (click)="editor.execute()">
+    <mat-icon>play_arrow</mat-icon>
+    <span>Run</span>
+  </button>
+</div>
+
+<div class="workflow-editor" appReteEditor #editor="editor"></div>
+
